@@ -5,7 +5,7 @@ with open('./README.md','r') as file:
 
 setuptools.setup(
 	name = 'suraj_ka_package',
-	version = '0.0.4',
+	version = '0.0.6',
 	author = 'Suraj Yadav',
 	author_email = 'sam124.sy@gmail.com',
 	description = 'Simple Python function',
