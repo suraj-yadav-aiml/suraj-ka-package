@@ -90,3 +90,27 @@ def days_between_dates(date1: str, date2: str) -> int:
     d1 = datetime.strptime(date1, "%Y-%m-%d")
     d2 = datetime.strptime(date2, "%Y-%m-%d")
     return abs((d2 - d1).days)
+
+def reverse_string(s: str) -> str:
+    """
+    Reverse a given string.
+
+    Parameters:
+    s (str): The string to be reversed.
+
+    Returns:
+    str: The reversed string.
+    """
+    return s[::-1]
+
+def decimal_to_binary(n: int) -> str:
+    """
+    Convert a decimal number to its binary representation.
+
+    Parameters:
+    n (int): The decimal number to convert.
+
+    Returns:
+    str: The binary representation of the decimal number as a string.
+    """
+    return bin(n)[2:]
