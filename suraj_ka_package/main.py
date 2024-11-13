@@ -102,3 +102,15 @@ def reverse_string(s: str) -> str:
     str: The reversed string.
     """
     return s[::-1]
+
+def decimal_to_binary(n: int) -> str:
+    """
+    Convert a decimal number to its binary representation.
+
+    Parameters:
+    n (int): The decimal number to convert.
+
+    Returns:
+    str: The binary representation of the decimal number as a string.
+    """
+    return bin(n)[2:]
