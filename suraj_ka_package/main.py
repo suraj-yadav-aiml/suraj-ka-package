@@ -1,3 +1,5 @@
+from datetime import datetime
+
 def add_numbers(a: int, b: int) -> int:
     """
     Add two numbers and return the result.
@@ -63,3 +65,28 @@ def calculate_area(radius: float) -> float:
     """
     from math import pi
     return pi * radius ** 2
+
+def get_current_datetime() -> str:
+    """
+    Get the current date and time.
+
+    Returns:
+    str: The current date and time in the format YYYY-MM-DD HH:MM:SS.
+    """
+    return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+
+def days_between_dates(date1: str, date2: str) -> int:
+    """
+    Calculate the number of days between two dates.
+
+    Parameters:
+    date1 (str): The first date in the format YYYY-MM-DD.
+    date2 (str): The second date in the format YYYY-MM-DD.
+
+    Returns:
+    int: The number of days between date1 and date2.
+    """
+    d1 = datetime.strptime(date1, "%Y-%m-%d")
+    d2 = datetime.strptime(date2, "%Y-%m-%d")
+    return abs((d2 - d1).days)
